@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+.quicksand{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+.quicksand-400 {
+  font-weight: 400;
+}
+.quicksand-500{
+  font-weight: 500;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: grey;
+}
+:root{
+  --bg-color : #0d1117;
+  --text-bgblue-color : #0078d4;
+  --text-link-color : #9fb1d1;
+  --text-heading-color : #e6eefa;
+
+  --text-font : "Quicksand", serif;
+  --text-font-2: "Montserrat", serif;
+}
+body{
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  /* background-color: blue; */
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+header a {
+  color: var(--text-link-color);
+}
+header nav{
+  /* background-color: white; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header nav section#icon-text{
+  display: flex;
+  gap: .5rem;
+  color: var(--text-heading-color);
+}
+header nav section#links{
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+header section.misc{
+  width: 80%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+header section.misc button, header section.misc input{
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid grey;
+}
+header section.misc .btn-color-mode{
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 10px;
+}
+header section.misc .btn-color-mode:hover{
+  background-color: rgba(92, 83, 83, 0.267);
+  border-radius: 5px;
+}
+header section.misc .btn-color-mode img{
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+header section.misc button.btn-download{
+  background-color: var(--text-bgblue-color);
+  padding: 2px 16px;
+  color: white;
+  font-family: var(--text-font);
+  font-weight: 900;
+  border: none;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+header section.misc .search-input-box{
+  gap: .5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 2px 16px;
+}
+header section.misc .search-input-box input{
+  border: none;
+  outline: none;
+}
+.search-input-box img{
+  width: 30px;
+  height: 30px;
+}
+
+.vscode-icon{
+  height: 30px;
+  width: 30px;
+}
+
+main{
+  /* background-color: grey; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+main section#sec-1{
+  width: 50%;
+  /* background-color: blue; */
+}
+
+
+main section#sec-1 #sec-1-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section#sec-1 h1{
+  font-size: 4.5rem;
+  font-family: var(--text-font-2);
+  color: var(--text-link-color);
+}
